@@ -56,5 +56,20 @@ module.exports = {
         } catch (e) {
             next(e);
         }
-    }
+    },
+
+    subscribe: async (req, res, next) => {
+        try {
+            const id = req.customer_id;
+            const customer_body = {
+                subscription: req.body.subscription
+            };
+
+            await Customer.findByIdAndUpdate(id, customer_body, {new: true});
+
+            res.json('Subscribe!');
+        } catch (e) {
+            next(e);
+        }
+    },
 }

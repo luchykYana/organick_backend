@@ -2,7 +2,6 @@ const path = require('path');
 const fs = require('fs/promises');
 
 const {ErrorHandler, errors} = require('../errors');
-const {Product} = require('../dataBase');
 
 const {NOT_FOUND_IMAGE} = errors;
 
@@ -14,7 +13,7 @@ module.exports = {
             const imageFolder = path.join(path.parse(__dirname).dir, 'public', 'images');
             const files = await fs.readdir(imageFolder);
 
-            if(!files.includes(image)) {
+            if (!files.includes(image)) {
                 throw new ErrorHandler(NOT_FOUND_IMAGE.message, NOT_FOUND_IMAGE.code);
             }
 

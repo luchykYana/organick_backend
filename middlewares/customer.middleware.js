@@ -89,4 +89,23 @@ module.exports = {
             next(e);
         }
     },
+
+    checkCustomerByEmailForSubscribe: async (req, res, next) => {
+        try {
+            const {email} = req.body;
+
+            const customerByEmail = await Customer.findOne({email});
+
+            if (customerByEmail) {
+                req.customer_id = customerByEmail.id;
+            } else {
+                const newCustomer = await Customer.create(req.body);
+                req.customer_id = newCustomer.id;
+            }
+
+            next();
+        } catch (e) {
+            next(e);
+        }
+    }
 };

@@ -14,6 +14,12 @@ router.post(
     customerMiddleware.checkCustomerByEmail,
     customerController.createCustomer
 );
+router.post(
+    '/subscribe',
+    customerMiddleware.isCustomerBodyValid(createCustomerValidator),
+    customerMiddleware.checkCustomerByEmailForSubscribe,
+    customerController.subscribe
+)
 
 router.get(
     '/:customer_id',
