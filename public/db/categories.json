@@ -1,0 +1,120 @@
+[{
+  "_id": {
+    "$oid": "64282a906e30f69f82b6e058"
+  },
+  "category_id": 1,
+  "name": "Vegetable",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1680353936696"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1680380658505"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64282e2ab553540bf049ec1f"
+  },
+  "category_id": 2,
+  "name": "Fruit",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1680354858731"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1680380686728"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64282e87b553540bf049ec23"
+  },
+  "category_id": 3,
+  "name": "Nuts",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1680354951289"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1680380698534"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64282e9eb553540bf049ec26"
+  },
+  "category_id": 4,
+  "name": "Legumes",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1680354974323"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1680380725714"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64282eddb553540bf049ec29"
+  },
+  "category_id": 5,
+  "name": "Millet",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1680355037923"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1680380780548"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64282f0ab553540bf049ec2c"
+  },
+  "category_id": 6,
+  "name": "Dairy",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1680355082991"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1680380745118"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64282f1eb553540bf049ec2f"
+  },
+  "category_id": 7,
+  "name": "Bread",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1680355102880"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1680380760327"
+    }
+  },
+  "__v": 0
+}]
